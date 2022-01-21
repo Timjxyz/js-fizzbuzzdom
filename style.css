@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#073b4c;
+}
+
+#title{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20PX;
+}
+
+#container{
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.box{
+    width: 90px;
+    height: 90px;
+    background-color: #118ab2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.box-green{
+    background-color: green;
+}
+
+.box-red{
+    background-color: red;
+}
+
+.box-yellow{
+    background-color: yellow;
+}
