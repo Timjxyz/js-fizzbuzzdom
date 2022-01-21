@@ -1,10 +1,10 @@
 const containerElement = document.getElementById('container')
 
-let frizz='frizz'
+let chooseNumber= parseInt(prompt("Inserisci un numero da 1 a 100"))
 
-for (let i= 1; i <= 100; i++){
+for (let i= 1; i <= chooseNumber; i++){
     
-    if (i%3==0 && i%5==0){
+    if ((i%3==0) && (i%5==0)){
         containerElement.innerHTML+='<div class="box box-red">' + "FizzBuzz" + '</div>';
     }
     else if(i%5==0){
