@@ -2,6 +2,10 @@ const containerElement = document.getElementById('container')
 
 let chooseNumber= parseInt(prompt("Inserisci un numero da 1 a 100"))
 
+if (isNaN(chooseNumber)){
+    alert('il numero non è valido')
+    chooseNumber= parseInt(prompt("Inserisci un numero da 1 a 100"))
+}
 for (let i= 1; i <= chooseNumber; i++){
     
     if ((i%3==0) && (i%5==0)){
@@ -18,3 +22,4 @@ for (let i= 1; i <= chooseNumber; i++){
         containerElement.innerHTML+='<div class="box">' + i + '</div>';
     }
 }
+
